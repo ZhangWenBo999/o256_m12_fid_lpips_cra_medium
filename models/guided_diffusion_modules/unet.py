@@ -465,7 +465,7 @@ class UNet(nn.Module):
             #     num_head_channels=num_head_channels,
             #     use_new_attention_order=use_new_attention_order,
             # ),
-            CRA(in_channels=64, reduction_ratio=4),
+            CRA(in_channels=ch, reduction_ratio=4),
             ResBlock(
                 ch,
                 cond_embed_dim,
